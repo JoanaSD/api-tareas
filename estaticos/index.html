@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentirillas</title>
+</head>
+<body>
+
+    <script>
+
+        fetch("/tareas/borrar/66159d963bf520a0a3acd2c0", {
+            method: "DELETE"
+          
+            
+        })
+        .then(respuesta => respuesta.text())
+        .then(respuesta => console.log(respuesta));
+
+    </script>
+    
+</body>
+</html>
