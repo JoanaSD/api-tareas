@@ -9,13 +9,18 @@
 
     <script>
 
-        fetch("/tareas/borrar/66159d963bf520a0a3acd2c0", {
-            method: "DELETE"
-          
-            
+        let tarea = "estudiar React";
+
+        fetch("/tareas/nueva", {
+            method : "POST",
+            body : JSON.stringify({tarea}),
+            headers : {
+                "Content-type" : "application/json"
+            }
         })
         .then(respuesta => respuesta.text())
         .then(respuesta => console.log(respuesta));
+
 
     </script>
     
